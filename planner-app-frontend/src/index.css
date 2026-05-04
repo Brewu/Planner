@@ -1,0 +1,50 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── TipTap editor table styles ─── */
+.ProseMirror table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  margin: 16px 0 !important;
+  table-layout: fixed !important;
+}
+
+.ProseMirror table td,
+.ProseMirror table th {
+  border: 1px solid #a0aec0 !important;
+  padding: 7px 12px !important;
+  font-size: 13px !important;
+  vertical-align: middle !important;
+  min-width: 60px !important;
+}
+
+.ProseMirror table th {
+  background-color: #1e3a5f !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-align: left !important;
+  letter-spacing: 0.03em !important;
+}
+
+.ProseMirror table tr:nth-child(even) td {
+  background-color: #edf2f7 !important;
+}
+
+.ProseMirror table tr:nth-child(odd) td {
+  background-color: #ffffff !important;
+}
+
+.ProseMirror table tr:hover td {
+  background-color: #e2e8f0 !important;
+}
